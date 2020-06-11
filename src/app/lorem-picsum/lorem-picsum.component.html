@@ -1,0 +1,39 @@
+<div class="row justify-content-center">
+  <div class="col-12">
+    <p>lorem-picsum works!</p>
+    <div class="form-group">
+      <label for="widths">Choose a width:</label>
+      <select
+        [(ngModel)]="imageWidth"
+        type="text"
+        name="width"
+        id="width"
+      >
+        <option value="100">100</option>
+        <option value="200">200</option>
+        <option value="300">300</option>
+        <option value="400">400</option>
+      </select>
+      <label for="heights">Choose a height:</label>
+      <select 
+        name="heights" 
+        id="heights"
+        [(ngModel)] = "imageHeight"  
+      >
+        <option value="100">100</option>
+        <option value="200">200</option>
+        <option value="300">300</option>
+        <option value="400">400</option>
+      </select>
+    </div>
+    <div class="row">
+      Width: {{imageWidth}}
+      Height: {{imageHeight}}
+    </div>
+    <div class="col">
+      <img src="https://picsum.photos/{{imageWidth}}/{{imageHeight}}" alt="picture from Lorem Picsum">
+    </div>
+  </div>
+</div>
+
+
