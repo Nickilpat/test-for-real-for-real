@@ -7,18 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoremPicsumComponent implements OnInit {
 
-  public imageWidth = 200;
-  public imageHeight = 300;
-  public sizes: string[] = ['100', '200', '300', '400']; 
+  public imageWidth;
+  public imageHeight;
+  public sizes: string[] = ['100', '200', '300', '400'];
 
   constructor() {
-    this.imageWidth = 200;
-     this.imageHeight = 300;
    }
 
   ngOnInit(): void {
-     this.imageWidth = 200;
-     this.imageHeight = 300;
+     this.imageWidth = 500;
+     this.imageHeight = 500;
   }
 
 }
