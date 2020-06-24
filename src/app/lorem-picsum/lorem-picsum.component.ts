@@ -9,7 +9,7 @@ export class LoremPicsumComponent implements OnInit {
 
   public imageWidth;
   public imageHeight;
-  public sizes: string[] = ['100', '200', '300', '400'];
+  public const sizes: string[] = ['100', '200', '300', '400'];
 
   constructor() {
    }

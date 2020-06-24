@@ -5,12 +5,12 @@
       <img src="https://picsum.photos/{{imageWidth}}/{{imageHeight}}" alt="picture from Lorem Picsum">
     </div>
     <div class="form-group pt-3">
-      <label for="widths">Choose a width:</label>
+      <label class="px-1" for="widths">Choose a width: </label>
       <select
         [(ngModel)]="imageWidth"
         type="text"
-        name="width"
-        id="width"
+        name="widths"
+        id="widths"
       >
         <option value="100">100</option>
         <option value="200">200</option>
@@ -23,7 +23,7 @@
         <option value="900">900</option>
         <option value="1000">1000</option>
       </select>
-      <label for="heights">Choose a height:</label>
+      <label class="px-1" for="heights">Choose a height: </label>
       <select
         name="heights"
         id="heights"
