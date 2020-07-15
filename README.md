@@ -22,6 +22,10 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
+## Configuring Pre-Commit Hooks
+
+For git to understand where the hook is located, Run `git config core.hooksPath ./hooks` command in your terminal
+
 ## API Information
 -[Lorem Picsum](https://picsum.photos/)
 
