@@ -27,7 +27,8 @@
               "src/styles.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": ["node_modules/jquery/dist/jquery.min.js",
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js"
             ]
           },
@@ -122,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "test-for-real-for-real"
+    }
+  },
+  "defaultProject": "test-for-real-for-real",
+  "cli": {
+    "analytics": "d9546dc7-84f8-4842-af2b-4c6a15b75814"
+  }
 }
