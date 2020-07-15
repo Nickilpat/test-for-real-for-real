@@ -15,8 +15,8 @@ export class LoremPicsumComponent implements OnInit {
    }
 
   ngOnInit(): void {
-     this.imageWidth = 500;
-     this.imageHeight = 500;
+     this.imageWidth = 200;
+     this.imageHeight = 200;
   }
 
 }
