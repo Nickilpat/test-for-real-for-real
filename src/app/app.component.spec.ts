@@ -1,11 +1,13 @@
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { LoremPicsumComponent } from './lorem-picsum/lorem-picsum.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        AppComponent
+        AppComponent,
+        LoremPicsumComponent
       ],
     }).compileComponents();
   }));
@@ -22,10 +24,4 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('test-for-real-for-real');
   });
 
-  // it('should render title', () => {
-  //   const fixture = TestBed.createComponent(AppComponent);
-  //   fixture.detectChanges();
-  //   const compiled = fixture.nativeElement;
-  //   expect(compiled.querySelector('.content span').textContent).toContain('test-for-real-for-real app is running!');
-  // });
 });
