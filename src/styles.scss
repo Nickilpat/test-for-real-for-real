@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: NotoSans-Regular;
+  src: url(./assets/fonts/NotoSansJP-Regular.otf)
+}
+
+@font-face {
+  font-family: NotoSans-Black;
+  src: url(./assets/fonts/NotoSansJP-Black.otf)
+}
+
+@font-face {
+  font-family: NotoSans-Bold;
+  src: url(./assets/fonts/NotoSansJP-Bold.otf)
+}
+
+@font-face {
+  font-family: NotoSans-Light;
+  src: url(./assets/fonts/NotoSansJP-Light.otf)
+}
+
+@font-face {
+  font-family: NotoSans-Medium;
+  src: url(./assets/fonts/NotoSansJP-Medium.otf)
+}
+
+@font-face {
+  font-family: NotoSans-Thin;
+  src: url(./assets/fonts/NotoSansJP-Thin.otf)
+}
+
+* {
+  font-family: NotoSans-Regular, sans-serif;
+}
