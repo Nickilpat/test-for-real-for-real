@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-lorem-picsum',
   templateUrl: './lorem-picsum.component.html',
-  styleUrls: ['./lorem-picsum.component.css']
+  styleUrls: ['./lorem-picsum.component.scss']
 })
 export class LoremPicsumComponent implements OnInit {
 
