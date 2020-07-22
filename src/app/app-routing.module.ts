@@ -8,7 +8,7 @@ const routes: Routes = [
   { path: 'lorem-picsum', component: LoremPicsumComponent },
   { path: 'welcome', component: WelcomeComponent},
   { path: '', redirectTo: '/welcome', pathMatch: 'full' }
-]
+];
 
 @NgModule({
   declarations: [],

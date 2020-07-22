@@ -1,3 +1,4 @@
+import { AppRoutingModule } from './app-routing.module';
 import { TestBed, async } from '@angular/core/testing';
 import { AppComponent } from './app.component';
 import { LoremPicsumComponent } from './lorem-picsum/lorem-picsum.component';
@@ -9,6 +10,9 @@ describe('AppComponent', () => {
         AppComponent,
         LoremPicsumComponent
       ],
+      imports: [
+        AppRoutingModule
+      ]
     }).compileComponents();
   }));
 
