@@ -1,3 +1,4 @@
+import { HttpService } from './../services/http.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -10,13 +11,18 @@ export class LoremPicsumComponent implements OnInit {
   public imageWidth;
   public imageHeight;
   public sizes: string[];
+  public isFeatureEnabled;
 
-  constructor() {
-   }
+  constructor(private httpService: HttpService) {}
 
   ngOnInit(): void {
      this.imageWidth = 200;
      this.imageHeight = 200;
+
+     this.httpService.determineIfFeatureEnabled().subscribe((data) => {
+       this.isFeatureEnabled = data;
+     });
+
   }
 
 }

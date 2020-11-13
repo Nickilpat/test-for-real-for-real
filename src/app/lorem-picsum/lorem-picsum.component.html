@@ -1,5 +1,5 @@
 <div class="row text-center">
-  <div class="col-12 justify-content-center">
+  <div *ngIf="isFeatureEnabled; else notEnabled" class="col-12 justify-content-center">
     <p>lorem-picsum works!</p>
     <div class="col">
       <img src="https://picsum.photos/{{imageWidth}}/{{imageHeight}}" alt="picture from Lorem Picsum">
@@ -41,6 +41,13 @@
         <option value="1000">1000</option>
       </select>
     </div>
+  </div>
+  <ng-template #notEnabled>
+    <div class="col-12 justify-content-cente py-5">
+      <span>This feature is currently disabled (for your safety)</span>
+    </div>
+  </ng-template>
+  <div class="col-12 justify-content-center">
     <button routerLink="">Go Home</button>
   </div>
 </div>
